@@ -1,0 +1,9 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp0s25: 
+      addresses: [10.0.0.1/24]
+      gateway4: 10.10.10.1
+      nameservers:
+          addresses: [10.10.10.1, 1.1.1.1]
